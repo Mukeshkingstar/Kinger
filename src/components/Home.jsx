@@ -21,7 +21,9 @@ const Home = () => {
     {postList.map((post)=>{
         return <> <center>
         <div className="show-post">
-        <h4>{post.author.name}</h4>
+        <div className="user">
+        <img src={post.author.id} height={50}/><h4>{post.author.name}</h4>
+        </div>
             <p>{post.post}</p>
             
         </div>
