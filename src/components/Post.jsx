@@ -9,7 +9,7 @@ const Post = () => {
   const auth = getAuth();
   const navigate = useNavigate();
   const CreatePost = async () =>{
-    await addDoc(PostCollection,{post,author : {name:auth.currentUser.displayName,id:auth.currentUser.uid,id:auth.currentUser.photoURL}})
+    await addDoc(PostCollection,{post,author : {name:auth.currentUser.displayName,id:auth.currentUser.uid,url:auth.currentUser.photoURL}})
    navigate("/")
      };
        // logout User in react
