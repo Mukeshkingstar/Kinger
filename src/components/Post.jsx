@@ -16,7 +16,7 @@ const Post = () => {
   const UserOut = () =>{
   signOut(auth).then(()=>{
    localStorage.clear();
-   window.location.pathname ="/login"
+   window.location.pathname="/"
   })
   }
   return (
